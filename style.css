@@ -5,12 +5,30 @@
 body{
     background-color: #F3F5FC;
     padding: 40px;
+    display: flex;
+    height: 100%;
+}
 
+section{
+    width: 35%;
+}
+
+main{
+    /* Toma el ancho restante*/
+    flex: 1;
+    height: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1;
 }
 
 .card{
     width: 400px;
-    height: 944px;
+    height: 85vh;
     margin: 0 auto;
     background-color: #FFFFFF;
     border-radius: 32px;
@@ -20,11 +38,85 @@ body{
 }
 
 
-
 textarea{
+    background-color: #F3F5FC;
     border: 0;
     outline: 0;
-    background-color: #F3F5FC;
-    color: #0A3871;
+    resize: none;
     font-size: xx-large;
+    color: #0A3871;
+    cursor: auto; 
+}
+
+/* cambiar el color del placeholder */
+textarea::-webkit-input-placeholder {
+    color: #0A3871;
+ }
+ :-moz-placeholder { /* Upto Firefox 18, Deprecated in Firefox 19  */
+    color: #0A3871;
+ }
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: #0A3871;
+ }
+ :-ms-input-placeholder {  
+    color: #0A3871;
+ }
+
+/* cambiar el scrollbar */
+textarea::-webkit-scrollbar {
+    width: 1em;
+}
+textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: #0A3871;
+  outline: 1px solid slategrey;
+}
+
+
+img{
+    /* Evitar seleccion de imagen */
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.middle{
+    margin-left: 20%;
+    padding: 0.5rem;
+    flex: 1 1 auto;
+}
+
+.texto{
+    padding: 3vh;
+}
+
+.btn{
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    color: white;
+    width: 328px;
+    height: 67px;
+    font-size: medium;
+}
+
+#btnCifrar{
+    background: #0A3871;
+}
+
+#btnDecifrar{
+    color: #0A3871;
+}
+
+#txtArea{
+    height: 400px;
+}
+
+#buttons{
+    margin-top: 5%;
+    margin-bottom: 5%;
+
 }

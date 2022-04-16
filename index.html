@@ -12,15 +12,31 @@
 </head>
 <body>
     <main>
-        <img src="/img/Vectorimg_a.png" alt="logo">
-        <textarea name="txtEncriptar" id="txtArea" cols="30" rows="5" maxlength="500" placeholder="Ingrese el texto aqui"></textarea>
+        <div class="content">
+            <div id="logo" class="top">
+                <img src="/img/Vectorimg_a.png" alt="logo">
 
-        <button>Encriptar</button>
-        <button>Desencriptar</button>
+            </div>
+            <div id="txtArea"  class="middle">
+                <textarea name="txtEncriptar" id="txt" cols="30" rows="8" maxlength="300" placeholder="Ingrese el texto aqui"></textarea>
+
+            </div>
+            <div id="buttons" class="middle">
+
+                <button id="btnCifrar" class="btn">Encriptar</button>
+                <button id="btnDecifrar" class="btn">Desencriptar</button>
+            </div>
+
+        </div>
     </main>
     <section>
         <div class="card">
-            mostrar texto
+            <div class="texto">
+                <span>
+                    texto
+                </span>
+
+            </div>
         </div>
     </section>
     
