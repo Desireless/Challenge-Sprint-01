@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="%PUBLIC_URL%/img/favicon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
@@ -14,7 +15,7 @@
     <main>
         <div class="content">
             <div id="logo" class="top">
-                <img src="/img/Vectorimg_a.png" alt="logo">
+                <img src="%PUBLIC_URL%/img/Vectorimg_a.png" alt="logo">
 
             </div>
             <div id="txtArea"  class="middle">
@@ -32,13 +33,17 @@
     <section>
         <div class="card">
             <div class="texto">
-                <span>
+                <span id="txtCifrado">
                     texto
                 </span>
 
             </div>
         </div>
     </section>
+
+    <div id="snackbar">Debe ingresar un texto</div>
     
+    <script src="/app.js"></script>
+
 </body>
 </html>
